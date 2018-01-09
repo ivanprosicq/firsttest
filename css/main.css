@@ -304,17 +304,44 @@ Ivan's css
 
 .navbar-dark .navbar-nav .nav-link{
     color:white !important;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 5px;
+    padding: 15px 30px 15px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;..");
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 12px;
 }
+
+/* Navbar items fit on smaller screens */
+@media (max-width: 768px) { 
+    .navbar-dark .navbar-nav .nav-link{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .bg-bakery{
+        background: black;
+    }
+    .navbar-brand{
+        padding-bottom: 0;
+    }    
+ }
+@media (max-width: 1200px) { 
+    .navbar-dark .navbar-nav .nav-link{
+        letter-spacing: 0px;
+    }  
+ }
 
 /* End of customisation of navbar */
 
 /* Showcase-one customisation */
 #showcase-one{
-    background-image: url(../img/bakerydesk.jpeg);
+    background-image: url(../img/bakerydeskk.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -328,14 +355,15 @@ Ivan's css
     transform: translate3d(-50%,-50%,0);
 }
 
-#showcase-one-title{
+.showcase-one-title{
     font-family: 'Playfair Display', serif;
-    color:red;
+    color:white;
     font-size: 6vw;
+    letter-spacing: 5px;
 }
 
-#showcase-one-title-description{
-    color:green;
+.showcase-one-title-description{
+    color:#ffffff;
     font-family: 'Proxima Nova', Georgia, sans-serif;
     font-size: 2.6vw;
     letter-spacing: 3px;
@@ -345,11 +373,10 @@ Ivan's css
 @media (max-width: 768px) { 
     #showcase-one-title{
         font-family: 'Playfair Display', serif;
-        color:blue;
         font-size: 11vw;
     }
     #showcase-one-title-description{
-        color:red;
+        margin-top: 30px;
         font-size: 6vw;
     }
  }
@@ -360,9 +387,149 @@ Ivan's css
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 } */
 
+.btn-menu{
+    color: white;
+    background: rgba(92, 87, 80, 0.5);
+    padding: 20px;
+    width: 250px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 3px;
+    border-radius: 0;
+}
+
 /* End of customisation of showcase-one */
+
+/* Showcase-two customisation */
+#showcase-two{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #fefdfc;
+}
+
+.showcase-two-title{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    /* font-size: 2.5vw; */
+    font-size: 50px;
+    text-align: center;
+    color: #56534c;
+    margin-bottom: 0;
+}
+
+.showcase-two-title-more{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #a47d5e;
+    /* font-size: 1vw; */
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.showcase-two-title-description{
+    padding: 30px 15px 30px 15px;
+    text-align: center;
+    color: #7f7c77;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    letter-spacing: 2px;
+}
+
+.showcase-two-job{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.showcase-two-person{
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    color: #56534c;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#showcase-two-firstname{
+    border-top:1px solid #d7d5ca;
+    border-bottom:1px solid #d7d5ca;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#showcase-two-lastname{
+    border-top:1px solid #d7d5ca;
+    border-bottom:1px solid #d7d5caed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cookpic{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Cook first and last name fit on smaller screens */
+@media (max-width: 768px) { 
+    #showcase-two-firstname{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #showcase-two-lastname{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .cookpic{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+ }
+
+ .showcase-two-quote{
+    padding-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #af8c71;
+}
+.fa-quote-left{
+    float:left;
+    color: #aaa8a4;
+    padding-left: 50px;
+}
+#quoteleft{
+    font-size: 18px;
+}
+.fa-quote-right{
+    float:right;
+    color: #aaa8a4;
+    padding-right: 50px;
+}
+#quoteright{
+    font-size: 18px;
+}
+
+@media (max-width: 768px) { 
+    .fa-quote-left{
+        padding-left: 0;
+    }
+    .fa-quote-right{
+        padding-right: 0;
+    }
+
+ }
+
+
+/* End of customisation of showcase-two*/
 
