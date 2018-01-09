@@ -341,7 +341,7 @@ Ivan's css
 
 /* Showcase-one customisation */
 #showcase-one{
-    background-image: url(../img/bakerydeskk.jpg);
+    background-image: url(../img/bakerydesk.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -529,6 +529,71 @@ Ivan's css
     }
 
  }
+
+ /* Showcase-two second element (right) customisation */
+#showcase__two__element__two {
+    padding-top: 30px;
+    height: 92%;
+}
+
+.showcase-two-groupone{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.showcase-two-grouptwo{
+    padding: 10px;
+}
+
+.img-flour {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 4px solid white;
+    outline-offset: -10px;
+    z-index: 0;
+}
+
+.img-egg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 4px solid white;
+    outline-offset: -10px;
+    z-index: 0;
+}
+
+.img-cake {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 4px solid white;
+    outline-offset: -10px;
+    z-index: 0;
+}
+
+.img-cakestraw {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 4px solid white;
+    outline-offset: -10px;
+    z-index: 0;
+}
+
+.showcase-two-vektor{
+    position: absolute;
+    z-index: 3;
+    padding-top: 150px;
+    
+}
+
+#showcase-two-vektortext{
+    font-family: 'Alegreya', serif;
+    color: #c9b176;
+    text-transform: uppercase;
+    z-index: 4;
+}
 
 
 /* End of customisation of showcase-two*/
