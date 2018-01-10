@@ -656,8 +656,9 @@ Ivan's css
     background-position: 70% 30%;
     margin-top: 100px;
     margin-bottom: 100px;
-    padding-left: 20px;
     color: white;
+    padding-left: 0;
+    padding-right: 0;
 
     height: 500px;
 }
@@ -713,9 +714,57 @@ Ivan's css
     }
  }
 
- .showcase-three-slidepics{
+.showcase-three-slidepics{
      display: flex;
      position: absolute;
      bottom: 0;
      padding-bottom: 30px;
  }
+
+/* Carousel customisation */
+
+#foodCarousel .list-inline {
+    white-space:nowrap;
+}
+
+#foodCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#foodCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#foodCarousel .carousel-indicators > li.active img {
+    opacity: 0.2;
+}
+
+.carousel-inner {
+    position: absolute;
+    z-index: 0;
+}
+
+.showcase-three-grades{
+    position: absolute;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+.list-inline-item{
+    border-radius: 50%;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
