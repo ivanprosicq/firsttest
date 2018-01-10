@@ -534,6 +534,7 @@ Ivan's css
 #showcase__two__element__two {
     padding-top: 30px;
     height: 92%;
+    position: relative;
 }
 
 .showcase-two-groupone{
@@ -584,16 +585,59 @@ Ivan's css
 .showcase-two-vektor{
     position: absolute;
     z-index: 3;
-    padding-top: 150px;
-    
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 30%;
+    z-index: 1;
+    opacity: 0.9;
 }
 
 #showcase-two-vektortext{
     font-family: 'Alegreya', serif;
     color: #c9b176;
+    /* font-size: 1.2em; */
+    font-size: 25px;
+    text-align: center;
     text-transform: uppercase;
-    z-index: 4;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
 }
+
+/* Vektor text change depending on the screen size */
+@media (max-width: 575px) { 
+    #showcase-two-vektortext{
+        font-size: 5vw;
+        top: 35%;
+    }
+ }
+
+@media (min-width: 768px) { 
+    #showcase-two-vektortext{
+        font-size: 30px;
+        left: 48%;
+        top: 37%;
+    }
+ }
+
+@media (min-width: 992px) { 
+    #showcase-two-vektortext{
+        top: 30%;
+        left: 50%;
+        font-size: 20px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    #showcase-two-vektortext{
+        top: 40%;
+        left: 50%;
+        font-size: 25px;
+    }
+ }
 
 
 /* End of customisation of showcase-two*/
