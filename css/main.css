@@ -648,6 +648,7 @@ Ivan's css
     background-size: cover;
     background-position: center;
     position: relative;
+    z-index: 0;
 }
 
 .showcase__three__element__one{
@@ -659,6 +660,8 @@ Ivan's css
     color: white;
     padding-left: 0;
     padding-right: 0;
+    position: relative;
+    z-index: 0;
 
     height: 500px;
 }
@@ -674,6 +677,8 @@ Ivan's css
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 80px;
+    position: relative;
+    z-index: 0;
     
 
     height: 500px;
@@ -749,17 +754,17 @@ Ivan's css
     z-index: 0;
 }
 
-.showcase-three-grades{
+.showcase-three-grades {
     position: absolute;
     z-index: 1;
     padding-left: 20px;
 }
 
-.list-inline-item{
+.list-inline-item {
     border-radius: 50%;
 }
 
-.carousel-item{
+.carousel-item {
     height: 500px;
 }
 
@@ -768,3 +773,170 @@ Ivan's css
     min-height: 100%;
     object-fit: cover;
 }
+
+/* Element three - ready in */
+.showcase__three__element__three {
+    z-index: 3;
+    text-align: right;
+    margin-top: -600px;
+}
+
+
+
+.showcase-three-readyin {
+    background-image: url(../img/readyinbg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -40px;
+    margin-right: -60px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    float: right;
+
+    -moz-box-shadow:    3px 3px 50px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 50px 6px #ccc;
+    box-shadow:         3px 3px 50px 6px #ccc;
+
+}
+
+.showcase-three-readytextgroup{
+    padding-top: 20%;
+    font-family: 'Alegreya', serif;
+}
+
+.showcase-three-readyintext {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    color: #a47d5e;
+    margin-top: -10px;
+    
+}
+
+.showcase-three-readyinnumber{
+    font-weight: bold;
+    font-size: 4.2vw;
+    color: #dfc691;
+    margin-top: -45px;
+}
+
+.showcase-three-readyinmin{
+    font-size: 1vw;
+    color: #979285;
+    margin-top: -40px;
+}
+
+/* Ready in text - change size depending on the screen */
+@media (max-width: 575px) { 
+    .showcase-three-readyin {
+        margin-right: 0;
+        margin-top: -60px;
+        width: 120px;
+        height: 120px;
+    }
+    .showcase-three-readyintext {
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .showcase-three-readyinnumber {
+        margin-top: -35px;
+        font-size: 40px;
+    }
+    .showcase-three-readyinmin {
+        margin-top: -30px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) { 
+    .showcase-three-readyin {
+        margin-right: 0;
+        margin-top: -60px;
+        width: 120px;
+        height: 120px;
+    }
+    .showcase-three-readyintext {
+        margin-top: 5px;
+        font-size: 1.6vw;
+    }
+    .showcase-three-readyinnumber {
+        margin-top: -35px;
+        font-size: 4.8vw;
+    }
+    .showcase-three-readyinmin {
+        margin-top: -35px;
+        font-size: 1.6vw;
+    }
+}
+
+@media (min-width: 768px) { 
+    .showcase-three-readyin {
+        margin-right: 0;
+        margin-top: -50px;
+        width: 120px;
+        height: 120px;
+    }
+    .showcase-three-readyintext {
+        margin-top: 5px;
+        font-size: 1.4vw;
+    }
+    .showcase-three-readyinnumber {
+        margin-top: -35px;
+        font-size: 4.6vw;
+    }
+    .showcase-three-readyinmin {
+        margin-top: -35px;
+        font-size: 1.4vw;
+    }  
+}
+
+@media (min-width: 992px) { 
+    .showcase-three-readyin {
+        margin-right: 0;
+        margin-top: -70px;
+        width: 140px;
+        height: 140px;
+    }
+    .showcase-three-readyintext {
+        margin-top: 5px;
+        font-size: 1.2vw;
+    }
+    .showcase-three-readyinnumber {
+        margin-top: -45px;
+        font-size: 4.4vw;
+    }
+    .showcase-three-readyinmin {
+        margin-top: -40px;
+        font-size: 1.2vw;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .showcase-three-readyin {
+        margin-right: -60px;
+        width: 180px;
+        height: 180px;
+    }
+    .showcase-three-readyintext {
+        margin-top: -10px;
+        font-size: 1vw;
+    }
+    .showcase-three-readyinnumber {
+        margin-top: -45px;
+        font-size: 4.2vw;
+    }
+    .showcase-three-readyinmin {
+        margin-top: -40px;
+        font-size: 1vw;
+    }
+}
+
+/* End of customisation of showcase-three */
+
+/* Showcase-four customisation */
+
+
+
+/* End of customisation of showcase-four */
