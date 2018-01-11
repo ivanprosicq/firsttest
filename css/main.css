@@ -1022,6 +1022,11 @@ Ivan's css
 
 .showcase-four-paper-one{
     background-color: #f3f1e9;
+    background-image: url(../img/plantbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: 280px 450px; */
+    background-position: right -250px bottom -100px;
     outline: 2px dashed #9e9c93;
     outline-offset: -12px;
 
@@ -1194,8 +1199,142 @@ Ivan's css
      font-weight: bold;
 }
 
+.showcase-four-paper-quote{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #56534c;
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 50px;
+}
 
+.showcase-four-paper-text{
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #56534c;
+    text-align: center;
+    font-size: 0.8vw;
+    padding-top: 40px;
+    line-height: 200%;
+}
 
+.btn-read{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #9e9c93;
+
+}
+
+/* Change paper text depending on the screen */
+@media (max-width: 419px) { 
+    .showcase-four-paper-one {
+        padding-top: 20px;
+    }
+
+    .showcase-four-paper-quote {
+        font-size: 5vw;
+        padding-top: 5px;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 3.0vw;
+        padding-top: 5px;
+    }
+    
+    .btn-read {
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 420px) { 
+    .showcase-four-paper-one {
+        padding-top: 40px;
+    }
+
+    .showcase-four-paper-quote {
+        font-size: 3.3vw;
+        padding-top: 0;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 2vw;
+        padding-top: 0;
+    }
+    
+    .btn-read {
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 576px) { 
+    .showcase-four-paper-quote {
+        font-size: 3.5vw;
+        padding-top: 30px;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 1.9vw;
+        padding-top: 20px;
+    }
+
+    .btn-read {
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .showcase-four-paper-quote{
+        font-size: 2.7vw;
+        padding-top: 20px;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 1.6vw;
+        padding-top: 30px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .showcase-four-paper-quote {
+        font-size: 2.8vw;
+        padding-top: 50px;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 1.4vw;
+        padding-top: 40px;
+    }
+ }
+
+@media (min-width: 1234px) { 
+    .showcase-four-paper-quote {
+        font-size: 2vw;
+        padding-top: 50px;
+    }
+    
+    .showcase-four-paper-text {
+        letter-spacing: 1.5px;
+        font-size: 0.8vw;
+        padding-top: 40px;
+    }
+ }
 
 
 
