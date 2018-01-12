@@ -1335,13 +1335,14 @@ Ivan's css
         padding-top: 40px;
     }
  }
+ /* End of customisation of showcase-three */
 
 /* Showcase-five customisation */
 #showcase-five {
     background-color: #f3f1e9;
     z-index: 0;
 
-    height: 1000px;
+    height: 100%;
 }
 
 .showcase-five-title {
@@ -1390,3 +1391,308 @@ Ivan's css
     letter-spacing: 1px;
     color: #56534c;
 }
+
+.showcase-five-meal {
+    height: 100%;
+}
+
+.img-fifth-main {
+    margin-top: 100px;
+    -moz-box-shadow:    3px 3px 50px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 50px 6px #ccc;
+    box-shadow:         3px 3px 50px 6px #ccc;
+    z-index: 0;
+}
+
+.btn-recipe {
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #dfc691;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width: 150px;
+    height: 50px;
+    margin-top: -40px;
+    margin-left: -20px;
+    background-color: white;
+    border-radius: 0;
+    border: 1px dashed #dfc691;
+}
+
+
+
+/* Element five - ready in */
+.showcase-five-cards {
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 50px;
+    z-index: 2;
+    margin-top: -750px;
+}
+
+.showcase-five-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 180px;
+    height: 180px;
+    margin-bottom: 0.7px;
+    float: right;
+    display: block;
+    clear: right;
+}
+
+.showcase-five-card-ready {
+    background-image: url(../img/readyinbg.png);
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    margin-top: -0.7px;
+    float: right;
+    
+    display: block;
+    clear: right;
+}
+
+.showcase-five-card-title { 
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 10%;
+    font-size: 1vw;
+
+}
+
+.showcase-five-card-time {
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #56534c;
+    font-size: 4.4vw;
+    margin-top: -30px;
+}
+
+.showcase-five-card-readytime {
+    color: #dfc691;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    font-size: 4.4vw;
+    margin-top: -30px;
+    
+}
+
+
+.showcase-five-card-minute {
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #979285;
+    
+    margin-top: -10px;
+}
+
+/* Card change depending on the screen size */
+@media (max-width: 374px) { 
+    .showcase-five-cards {
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: -320px;
+    }
+    
+    .showcase-five-card {
+        width: 100px;
+        height: 115px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .showcase-five-card-title { 
+        padding-top: 20%;
+        font-size: 12px;
+    }
+    
+    .showcase-five-card-time {
+        font-size: 35px;
+        margin-top: -15px;
+    }
+
+    .showcase-five-card-ready {
+        width: 100px;
+        height: 115px;
+        float: left;
+    }
+    
+    .showcase-five-card-readytime {
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: -15px;
+    }
+ }
+
+@media (min-width: 375px) { 
+    .showcase-five-cards {
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: -350px;
+        padding-left: 60px;
+    }
+    
+    .showcase-five-card {
+        width: 75px;
+        height: 100px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .showcase-five-card-title { 
+        padding-top: 20%;
+        font-size: 12px;
+    }
+    
+    .showcase-five-card-time {
+        font-size: 35px;
+        margin-top: -15px;
+    }
+
+    .showcase-five-card-ready {
+        width: 75px;
+        height: 100px;
+        float: left;
+    }
+    
+    .showcase-five-card-readytime {
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: -15px;
+    }
+ }
+
+
+@media (min-width: 768px) { 
+    .showcase-five-cards {
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: -550px;
+        padding-left: 150px;
+    }
+    
+    .showcase-five-card {
+        width: 140px;
+        height: 140px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .showcase-five-card-title { 
+        padding-top: 20%;
+        font-size: 1.5vw;
+    }
+    
+    .showcase-five-card-time {
+        font-size: 6vw;
+        margin-top: -10px;
+    }
+
+    .showcase-five-card-ready {
+        width: 140px;
+        height: 140px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .showcase-five-card-readytime {
+        font-weight: bold;
+        font-size: 6vw;
+        margin-top: -10px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .showcase-five-cards {
+        padding-top: 60px;
+        padding-right: 50px;
+        margin-top: -750px;
+    }
+    
+    .showcase-five-card {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 0.7px;
+        float: right;
+        display: block;
+        clear: right;
+    }
+    
+    .showcase-five-card-title { 
+        padding-top: 20%;
+        font-size: 1.5vw;
+    }
+    
+    .showcase-five-card-time {
+        font-size: 7vw;
+        margin-top: -30px;
+    }
+
+    .showcase-five-card-ready {
+        width: 180px;
+        height: 180px;
+        margin-top: -0.7px;
+        float: right;
+        display: block;
+        clear: right;
+    }
+    
+    .showcase-five-card-readytime {
+        font-weight: bold;
+        font-size: 7vw;
+        margin-top: -30px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .showcase-five-cards {
+        padding-top: 60px;
+        padding-right: 50px;
+        margin-top: -750px;
+    }
+    
+    .showcase-five-card {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 0.7px;
+        float: right;
+        display: block;
+        clear: right;
+    }
+    
+    .showcase-five-card-title { 
+        padding-top: 10%;
+        font-size: 1vw;
+    }
+    
+    .showcase-five-card-time {
+        font-size: 4.4vw;
+        margin-top: -30px;
+    }
+
+    .showcase-five-card-ready {
+        width: 180px;
+        height: 180px;
+        margin-top: -0.7px;
+        float: right;
+        display: block;
+        clear: right;
+    }
+    
+    .showcase-five-card-readytime {
+        font-weight: bold;
+        font-size: 4.4vw;
+        margin-top: -30px;
+    }
+ }
+
+ /* End of customisation of showcase-five */
+
+/* Footer customisation */
+
