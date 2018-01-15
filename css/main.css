@@ -96,23 +96,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -293,16 +276,16 @@ textarea {
 /*
 Ivan's css
 */
-/* body{
-    line-height: 2.5;
-} */
-
 /* Customisation of the navbar */
-.bg-bakery{
+.navbar {
+    z-index: 2;
+}
+
+.bg-bakery {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
     color:white !important;
     font-family: 'Alegreya', serif;
     letter-spacing: 5px;
@@ -311,21 +294,19 @@ Ivan's css
     font-size: 15px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     letter-spacing: 5px;
     padding-bottom: 12px;
 }
 
+
 /* Navbar items fit on smaller screens */
 @media (max-width: 768px) { 
     .navbar-dark .navbar-nav .nav-link{
         padding-left: 2px;
         padding-right: 2px;
-    }
-    .bg-bakery{
-        background: black;
     }
     .navbar-brand{
         padding-bottom: 0;
@@ -340,14 +321,15 @@ Ivan's css
 /* End of customisation of navbar */
 
 /* Showcase-one customisation */
-#showcase-one{
+#showcase-one {
     background-image: url(../img/bakerydesk.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    z-index: 1;
 }
 
-#showcase__one__element{
+#showcase__one__element {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -355,14 +337,14 @@ Ivan's css
     transform: translate3d(-50%,-50%,0);
 }
 
-.showcase-one-title{
+.showcase-one-title {
     font-family: 'Playfair Display', serif;
     color:white;
     font-size: 6vw;
     letter-spacing: 5px;
 }
 
-.showcase-one-title-description{
+.showcase-one-title-description {
     color:#ffffff;
     font-family: 'Proxima Nova', Georgia, sans-serif;
     font-size: 2.6vw;
@@ -371,25 +353,17 @@ Ivan's css
 
 /* Change font size on smaller screens */
 @media (max-width: 768px) { 
-    #showcase-one-title{
-        font-family: 'Playfair Display', serif;
-        font-size: 11vw;
+    .showcase-one-title{
+        padding-top: 50px;
+        font-size: 55px;
     }
-    #showcase-one-title-description{
+    .showcase-one-title-description{
         margin-top: 30px;
-        font-size: 6vw;
+        font-size: 20px;
     }
  }
 
-/* #showcase__one__element{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-.btn-menu{
+.btn-menu {
     color: white;
     background: rgba(92, 87, 80, 0.5);
     padding: 20px;
@@ -404,13 +378,13 @@ Ivan's css
 /* End of customisation of showcase-one */
 
 /* Showcase-two customisation */
-#showcase-two{
+#showcase-two {
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: #fefdfc;
 }
 
-.showcase-two-title{
+.showcase-two-title {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     /* font-size: 2.5vw; */
@@ -420,7 +394,7 @@ Ivan's css
     margin-bottom: 0;
 }
 
-.showcase-two-title-more{
+.showcase-two-title-more {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     text-align: center;
@@ -431,7 +405,7 @@ Ivan's css
     letter-spacing: 2px;
 }
 
-.showcase-two-title-description{
+.showcase-two-title-description {
     padding: 30px 15px 30px 15px;
     text-align: center;
     color: #7f7c77;
@@ -439,14 +413,14 @@ Ivan's css
     letter-spacing: 2px;
 }
 
-.showcase-two-job{
+.showcase-two-job {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     text-align: center;
     font-size: 22px;
 }
 
-.showcase-two-person{
+.showcase-two-person {
     font-family: 'Alegreya', serif;
     text-align: center;
     color: #56534c;
@@ -454,7 +428,7 @@ Ivan's css
     padding: 10px;
 }
 
-#showcase-two-firstname{
+#showcase-two-firstname {
     border-top:1px solid #d7d5ca;
     border-bottom:1px solid #d7d5ca;
     padding-top: 10px;
@@ -463,7 +437,7 @@ Ivan's css
     padding-right: 20px;
 }
 
-#showcase-two-lastname{
+#showcase-two-lastname {
     border-top:1px solid #d7d5ca;
     border-bottom:1px solid #d7d5caed;
     padding-top: 10px;
@@ -472,30 +446,30 @@ Ivan's css
     padding-right: 20px;
 }
 
-.cookpic{
+.cookpic {
     padding-left: 20px;
     padding-right: 20px;
 }
 
 /* Cook first and last name fit on smaller screens */
 @media (max-width: 768px) { 
-    #showcase-two-firstname{
+    #showcase-two-firstname {
         padding-left: 5px;
         padding-right: 5px;
     }
     
-    #showcase-two-lastname{
+    #showcase-two-lastname {
         padding-left: 5px;
         padding-right: 5px;
     }
     
-    .cookpic{
+    .cookpic {
         padding-left: 5px;
         padding-right: 5px;
     }
  }
 
- .showcase-two-quote{
+ .showcase-two-quote {
     padding-top: 30px;
     font-family: 'Dancing Script', cursive;
     font-size: 23px;
@@ -503,21 +477,11 @@ Ivan's css
     text-align: center;
     color: #af8c71;
 }
-.fa-quote-left{
-    float:left;
-    color: #aaa8a4;
-    padding-left: 50px;
+.move-quote-left {
+    padding-left: 30px;
 }
-#quoteleft{
-    font-size: 18px;
-}
-.fa-quote-right{
-    float:right;
-    color: #aaa8a4;
-    padding-right: 50px;
-}
-#quoteright{
-    font-size: 18px;
+.move-quote-right {
+    padding-right: 30px;
 }
 
 @media (max-width: 768px) { 
@@ -537,12 +501,12 @@ Ivan's css
     position: relative;
 }
 
-.showcase-two-groupone{
+.showcase-two-groupone {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.showcase-two-grouptwo{
+.showcase-two-grouptwo {
     padding: 10px;
 }
 
@@ -582,7 +546,7 @@ Ivan's css
     z-index: 0;
 }
 
-.showcase-two-vektor{
+.showcase-two-vektor {
     position: absolute;
     z-index: 3;
     width: 50%;
@@ -593,7 +557,7 @@ Ivan's css
     opacity: 0.9;
 }
 
-#showcase-two-vektortext{
+#showcase-two-vektortext {
     font-family: 'Alegreya', serif;
     color: #c9b176;
     /* font-size: 1.2em; */
@@ -643,7 +607,7 @@ Ivan's css
 /* End of customisation of showcase-two*/
 
 /* Showcase-three customisation */
-#showcase-three{
+#showcase-three {
     background-image: url(../img/pancakebg.png);
     background-size: cover;
     background-position: center;
@@ -651,7 +615,7 @@ Ivan's css
     z-index: 0;
 }
 
-.showcase__three__element__one{
+.showcase__three__element__one {
     background-image: url(../img/pancakepic.png);
     background-size: cover;
     background-position: 70% 30%;
@@ -666,12 +630,16 @@ Ivan's css
     height: 500px;
 }
 
-.showcase-three-gradeone{
+.showcase-three-gradeone {
     padding-top: 150px;
 }
 
-.showcase__three__element__two{
+.showcase__three__element__two {
     background-color: white;
+    background-image: url(../img/img4.png);
+    background-repeat: no-repeat;
+    background-position: right 5px bottom 5px;
+
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 60px;
@@ -679,19 +647,18 @@ Ivan's css
     padding-top: 80px;
     position: relative;
     z-index: 0;
-    
 
     height: 500px;
 }
 
-.showcase-three-title{
+.showcase-three-title {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     font-size: 50px;
     color: #56534c;
 }
 
-.showcase-three-title-more{
+.showcase-three-title-more {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     color: #a47d5e;
@@ -701,7 +668,7 @@ Ivan's css
     margin-top: -5px;
 }
 
-.showcase-three-title-description{
+.showcase-three-title-description {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     letter-spacing: 2px;
     color: #56534c;
@@ -719,51 +686,16 @@ Ivan's css
     }
  }
 
-.showcase-three-slidepics{
+.showcase-three-slidepics {
      display: flex;
      position: absolute;
      bottom: 0;
      padding-bottom: 30px;
+     margin-left: -20px;
+     
  }
 
 /* Carousel customisation */
-
-#foodCarousel .list-inline {
-    white-space:nowrap;
-}
-
-#foodCarousel .carousel-indicators {
-    position: static;
-    left: initial;
-    width: initial;
-    margin-left: initial;
-}
-
-#foodCarousel .carousel-indicators > li {
-    width: initial;
-    height: initial;
-    text-indent: initial;
-}
-
-#foodCarousel .carousel-indicators > li.active img {
-    opacity: 0.2;
-}
-
-.carousel-inner {
-    position: absolute;
-    z-index: 0;
-}
-
-.showcase-three-grades {
-    position: absolute;
-    z-index: 1;
-    padding-left: 20px;
-}
-
-.list-inline-item {
-    border-radius: 50%;
-}
-
 .carousel-item {
     height: 500px;
 }
@@ -773,6 +705,73 @@ Ivan's css
     min-height: 100%;
     object-fit: cover;
 }
+
+.movearrow {
+    padding-top: 25px;
+}
+
+.fa-caret-square-o-left {
+    color: #56534c;
+}
+
+.fa-caret-square-o-right {
+    color: #56534c;
+}
+
+.moveslidepc {
+    margin-left: -20px;
+}
+
+.hideme {
+    display: none;
+}
+
+.showme {
+    visibility: visible;
+}
+
+@media (max-width: 992px) { 
+    .showcase-three-slidepics{
+        padding-bottom: 10px;
+    }
+    .hideme {
+        display: block;
+    }
+    .showme {
+        visibility: hidden;
+    }
+    .showcase-three-title{
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .showcase-three-slidepics{
+        padding-bottom: 30px;
+        
+    }
+}
+@media (max-width: 433px) { 
+    .showcase-three-slidepics{
+        padding-bottom: 22px;
+        
+    }
+    .movearrow {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 364px) { 
+    .showcase-three-slidepics{
+        padding-bottom: 10px;
+        
+    }
+    .movearrow {
+        padding-top: 20px;
+    }
+}
+
+
 
 /* Element three - ready in */
 .showcase__three__element__three {
@@ -800,7 +799,7 @@ Ivan's css
 
 }
 
-.showcase-three-readytextgroup{
+.showcase-three-readytextgroup {
     padding-top: 20%;
     font-family: 'Alegreya', serif;
 }
@@ -815,14 +814,14 @@ Ivan's css
     
 }
 
-.showcase-three-readyinnumber{
+.showcase-three-readyinnumber {
     font-weight: bold;
     font-size: 4.2vw;
     color: #dfc691;
     margin-top: -45px;
 }
 
-.showcase-three-readyinmin{
+.showcase-three-readyinmin {
     font-size: 1vw;
     color: #979285;
     margin-top: -40px;
@@ -936,7 +935,7 @@ Ivan's css
 /* End of customisation of showcase-three */
 
 /* Showcase-four customisation */
-#showcase-four{
+#showcase-four {
     background-image: url(../img/breakfastbg.png);
     background-size: cover;
     background-position: center;
@@ -946,13 +945,13 @@ Ivan's css
     height: 100%;
 }
 
-.showcase__four__element__one{
+.showcase__four__element__one {
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
 
-.showcase__four__element__two{
+.showcase__four__element__two {
 
     margin-top: 100px;
     margin-bottom: 100px;
@@ -960,16 +959,16 @@ Ivan's css
 
 /* Remove margins when element one and two collapse */
 @media (max-width: 992px) { 
-    .showcase__four__element__one{
+    .showcase__four__element__one {
         margin-bottom: 0;
     }
     
-    .showcase__four__element__two{
+    .showcase__four__element__two {
         margin-top: 0;
     }
 }
 
-.showcase-four-menu-title{
+.showcase-four-menu-title {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     letter-spacing: 2px;
@@ -977,7 +976,7 @@ Ivan's css
     font-size: 3.3em;
 }
 
-.showcase-four-menu-titledescription{
+.showcase-four-menu-titledescription {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     color: #c8a593;
@@ -986,26 +985,26 @@ Ivan's css
     margin-top: -35px;
 }
 
-.showcase-four-menu-item{
+.showcase-four-menu-item {
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
-.showcase-four-menu{
+.showcase-four-menu {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     color: white;
     font-size: 1.9em;
 }
 
-.showcase-four-menu-description{
+.showcase-four-menu-description {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     color: #c2beba;
     letter-spacing: 1px;
     font-size: 1.2em;
 }
 
-.showcase-four-menu-price{
+.showcase-four-menu-price {
     font-family: 'Alegreya', serif;
     color: #dfc691;
     font-size: 2em;
@@ -1014,18 +1013,17 @@ Ivan's css
 }
 
 /* Right side paper customisation */
-.showcase__four__element__two{
+.showcase__four__element__two {
     position: relative;
     z-index: 5;
     height: 750px;
 }
 
-.showcase-four-paper-one{
+.showcase-four-paper-one {
     background-color: #f3f1e9;
     background-image: url(../img/plantbg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: 280px 450px; */
     background-position: right -250px bottom -100px;
     outline: 2px dashed #9e9c93;
     outline-offset: -12px;
@@ -1038,15 +1036,13 @@ Ivan's css
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 80px;
-
     margin-left: 55px;
-
 
     height: 90%;
     width: 500px;
 }
 
-.showcase-four-paper-two{
+.showcase-four-paper-two {
     background-color: #d7d5c5;
     outline: 2px dashed #9e9c93;
     outline-offset: -12px;
@@ -1058,12 +1054,11 @@ Ivan's css
     margin-bottom: 20px;
     margin-left: 430px;
 
-
     height: 80%;
     width: 150px;
 }
 
-.showcase-four-paper-three{
+.showcase-four-paper-three {
     background-color: #bebbaf;
     outline: 2px dashed #9e9c93;
     outline-offset: -12px;
@@ -1073,9 +1068,7 @@ Ivan's css
 
     margin-top: 100px;
     margin-bottom: 20px;
-
     margin-left: 450px;
-
 
     height: 67%;
     width: 150px;
@@ -1170,36 +1163,36 @@ Ivan's css
         height: 750px;
         margin-left: 0;
     }
-    .showcase-four-paper-one{
+    .showcase-four-paper-one {
         margin-left: 55px;
         height: 90%;
         width: 500px;
     }
-    .showcase-four-paper-two{
+    .showcase-four-paper-two {
         margin-left: 430px;
         height: 80%;
         width: 150px;
     }
-    .showcase-four-paper-three{
+    .showcase-four-paper-three {
         margin-left: 450px;
         height: 67%;
         width: 150px;
     }
  }
 
- .showcase-four-paper-intro{
+ .showcase-four-paper-intro {
     text-align: center;
     font-family: 'Alegreya', serif;
     font-weight: bold;
  }
 
- .showcase-four-paper-year{
+ .showcase-four-paper-year {
      text-align: center;
      font-family: 'Alegreya', serif;
      font-weight: bold;
 }
 
-.showcase-four-paper-quote{
+.showcase-four-paper-quote {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     color: #56534c;
@@ -1208,7 +1201,7 @@ Ivan's css
     padding-top: 50px;
 }
 
-.showcase-four-paper-text{
+.showcase-four-paper-text {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -1219,7 +1212,7 @@ Ivan's css
     line-height: 200%;
 }
 
-.btn-read{
+.btn-read {
     font-family: 'Alegreya', serif;
     font-weight: bold;
     color: #a47d5e;
@@ -1373,7 +1366,7 @@ Ivan's css
     text-align: center;
 }
 
-.showcase-five-ingredient{
+.showcase-five-ingredient {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1695,4 +1688,61 @@ Ivan's css
  /* End of customisation of showcase-five */
 
 /* Footer customisation */
+.footer {
+    background-color: #f3f1e9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+
+    
+    border-top:1px solid #bfbbb7;
+    border-bottom:1px solid #bfbbb7;
+}
+
+.footer li {
+    float: left;
+
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+}
+
+.footer li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: #56534c;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#footer-brand {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+}
+
+/* Move li elements under each other when screen is small */
+@media (max-width: 992px) { 
+    .footer ul {
+        display: block;
+    }
+
+    .footer li {
+        float: none;
+    }
+ }
+ /* End of customisation of footer */
